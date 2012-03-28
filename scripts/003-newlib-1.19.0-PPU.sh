@@ -20,4 +20,4 @@ mkdir build-ppu && cd build-ppu || { exit 1; }
     || { exit 1; }
 
 ## Compile and install.
-make -j 4 && make install || { exit 1; }
+make  ${PARALLEL} && make install || { exit 1; }

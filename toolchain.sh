@@ -1,6 +1,9 @@
 #!/bin/bash
 # toolchain.sh by Dan Peori (dan.peori@oopo.net)
 
+: ${PARALLEL:="-j2"}
+export PARALLEL
+
 ## Enter the ps3toolchain directory.
 cd "`dirname $0`" || { echo "ERROR: Could not enter the ps3toolchain directory."; exit 1; }
 

@@ -40,4 +40,4 @@ mkdir build-ppu-stage2 && cd build-ppu-stage2 || { exit 1; }
     || { exit 1; }
 
 ## Compile and install.
-make -j 4 all && make install || { exit 1; }
+make  ${PARALLEL} all && make install || { exit 1; }

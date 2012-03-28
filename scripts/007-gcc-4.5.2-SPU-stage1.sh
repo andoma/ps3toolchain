@@ -38,4 +38,4 @@ mkdir build-spu-stage1 && cd build-spu-stage1 || { exit 1; }
     || { exit 1; }
 
 ## Compile and install.
-make -j 4 all-gcc && make install-gcc || { exit 1; }
+make ${PARALLEL} all-gcc && make install-gcc || { exit 1; }
