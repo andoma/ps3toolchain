@@ -14,7 +14,7 @@ cat ../../patches/newlib-1.19.0-PS3.patch | patch -p1 || { exit 1; }
 mkdir build-ppu && cd build-ppu || { exit 1; }
 
 ## Configure the build.
-CFLAGS="-DMALLOC_PROVIDED=1 -DHAVE_ASSERT_FUNC=1" ../configure --prefix="$PS3DEV/host/ppu" --target="ppu" \
+CFLAGS="-DMALLOC_PROVIDED=1 -DHAVE_ASSERT_FUNC=1 -O2 -g" ../configure --prefix="$PS3DEV/host/ppu" --target="ppu" \
     --enable-newlib-multithread \
     --enable-newlib-hw-fp \
     || { exit 1; }
