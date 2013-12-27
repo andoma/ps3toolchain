@@ -1,0 +1,3 @@
+Fedora 18:
+autoconf, automake, bison, flex, gcc, elfutils-libelf, make, texinfo
+  ncurses, patch, python, subversion, wget, zlib
