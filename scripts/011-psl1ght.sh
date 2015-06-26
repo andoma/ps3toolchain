@@ -2,7 +2,7 @@
 # psl1ght.sh by Dan Peori (dan.peori@oopo.net)
 
 ## Download the source code.
-wget --continue --no-check-certificate https://github.com/andoma/PSL1GHT/tarball/074d52f175ea901c44bf778614dd39e5c9a32d3d -O psl1ght.tar.gz || { exit 1; }
+wget --continue --no-check-certificate https://github.com/andoma/PSL1GHT/tarball/0fbf81fe13c19aa3f9cec62a0fc6a7b81f2ce758 -O psl1ght.tar.gz || { exit 1; }
 
 ## Unpack the source code.
 rm -Rf psl1ght && mkdir psl1ght && tar --strip-components=1 --directory=psl1ght -xvzf psl1ght.tar.gz || { exit 1; }
